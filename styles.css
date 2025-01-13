@@ -1,1 +1,16 @@
 /*  your css code here. If applicable */
+*{
+	background-color: skyblue;
+	margin: 0;
+	
+}
+.first-child{
+	color: white;
+	background-color: black;
+}
+.second-child{
+	color: black;
+}
+.last-child{
+	color: red;
+}
