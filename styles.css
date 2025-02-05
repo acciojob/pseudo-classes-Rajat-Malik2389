@@ -1,42 +1,46 @@
-:root{
-	--maincolor:rgb(135, 206, 235);
-}
+/*  your css code here. If applicable */
+:root {
+            background-color: rgb(135, 206, 235);
+        }
 
-*{
-	background-color:var(--maincolor);
-}
+        /* Styling for paragraphs */
+        article p:first-child {
+            color: white;
+            background-color: black;
+            padding: 5px;
+        }
 
-p:first-child{
-	background-color:black;
-	color:white;
-}
+        article p:nth-child(2) {
+            color: black;
+        }
 
-p:nth-child(2){
-	color:black;
-}
+        article p:last-child {
+            color: red;
+        }
 
-p:last-child{
-	color:red;
-}
+        /* Unordered list styling */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
 
-li{
-	width:50%;
-	padding:10px;
-	background-color:gray;
-}
+        ul li {
+            background-color: gray;
+            padding: 10px;
+            width: 50%;
+        }
 
-ul li:nth-child(odd){
-	background-color:white;
-}
+       
+        ul li:first-child, ul li:last-child {
+            font-size: 22px;
+        }
 
-ul li:first-child{
-	font-size:22px;
-}
+       
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
 
-ul li:last-child{
-	font-size:22px;
-}
-
-ul li:nth-child(3){
-	background-color:pink;
-}
+      
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
