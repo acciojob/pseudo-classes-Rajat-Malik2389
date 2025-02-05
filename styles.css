@@ -1,16 +1,42 @@
-/*  your css code here. If applicable */
+:root{
+	--maincolor:rgb(135, 206, 235);
+}
+
 *{
-	background-color: rgb(135, 206, 235);
-	margin: 0;
-	
+	background-color:var(--maincolor);
 }
-.first-child{
-	color: white;
-	background-color: black;
+
+p:first-child{
+	background-color:black;
+	color:white;
 }
-.second-child{
-	color: black;
+
+p:nth-child(2){
+	color:black;
 }
-.last-child{
-	color: red;
+
+p:last-child{
+	color:red;
+}
+
+li{
+	width:50%;
+	padding:10px;
+	background-color:gray;
+}
+
+ul li:nth-child(odd){
+	background-color:white;
+}
+
+ul li:first-child{
+	font-size:22px;
+}
+
+ul li:last-child{
+	font-size:22px;
+}
+
+ul li:nth-child(3){
+	background-color:pink;
 }
